@@ -10,21 +10,51 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// 2. Mobile Menu Toggle
+// 2. Mobile Menu Toggle with Overlay
 const mobileBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
 const mobileBtnIcon = mobileBtn ? mobileBtn.querySelector('i') : null;
 
+// Create overlay element
+const overlay = document.createElement('div');
+overlay.classList.add('nav-overlay');
+document.body.appendChild(overlay);
+
+function openMenu() {
+  navLinks.classList.add('active');
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  if (mobileBtnIcon) {
+    mobileBtnIcon.classList.remove('ph-list');
+    mobileBtnIcon.classList.add('ph-x');
+  }
+}
+
+function closeMenu() {
+  navLinks.classList.remove('active');
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+  if (mobileBtnIcon) {
+    mobileBtnIcon.classList.remove('ph-x');
+    mobileBtnIcon.classList.add('ph-list');
+  }
+}
+
 if (mobileBtn && navLinks) {
   mobileBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
     if (navLinks.classList.contains('active')) {
-      mobileBtnIcon.classList.remove('ph-list');
-      mobileBtnIcon.classList.add('ph-x');
+      closeMenu();
     } else {
-      mobileBtnIcon.classList.remove('ph-x');
-      mobileBtnIcon.classList.add('ph-list');
+      openMenu();
     }
+  });
+
+  // Close menu when overlay is tapped
+  overlay.addEventListener('click', closeMenu);
+
+  // Close menu when a nav link is tapped
+  navLinks.querySelectorAll('.nav-link, .btn').forEach(link => {
+    link.addEventListener('click', closeMenu);
   });
 }
 

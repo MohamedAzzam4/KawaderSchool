@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kawader Secondary Technical School for Nursing</title>
+  <meta name="description" content="Kawader Secondary Technical School for Nursing in Beheira - High School Alternative. Qualifying professional nurses in an outstanding educational environment.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: var(--font-en); text-align: left; direction: ltr; }
+    .hero-content h1 { letter-spacing: -1px; }
+    .hero-container { direction: ltr; }
+    .section-header, .section-header.center, .footer-col { text-align: left; }
+    .footer-links a:hover { padding-left: 5px; padding-right: 0; }
+    .nav-logo span { padding-left: 12px; }
+    .btn-ghost::after { content: '→'; }
+    .about-grid, .contact-grid { text-align: left; }
+    .stat-number { direction: ltr; }
+    .floating-badge { direction: ltr; }
+    .fb-1 { left: -20px; right: auto; }
+    .fb-2 { bottom: 40px; right: -30px; left: auto; }
+    .fb-3 { top: 50%; left: -40px; right: auto; }
+    .about-est-badge { left: 20px; right: auto; }
+    @media (max-width: 768px) {
+      .nav-links { left: -100%; right: auto; transition: 0.4s left ease; box-shadow: 10px 0 30px rgba(0,0,0,0.1); }
+      .nav-links.active { left: 0; right: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-decorations">
+    <div class="bg-circle bg-circle-1"></div><div class="bg-circle bg-circle-2"></div><div class="bg-circle bg-circle-3"></div>
+  </div>
+
+  <nav class="navbar glass-nav">
+    <div class="container nav-container">
+      <a href="index-en.html" class="nav-logo">
+        <img src="assets/logo.png" alt="Kawader Nursing School">
+        <span>Kawader School</span>
+      </a>
+      <div class="nav-links">
+        <a href="index-en.html" class="nav-link active">Home</a>
+        <a href="about-en.html" class="nav-link">About Us</a>
+        <a href="program-en.html" class="nav-link">Academic Program</a>
+        <a href="admissions-en.html" class="nav-link">Admissions</a>
+        <a href="contact-en.html" class="nav-link">Contact Us</a>
+        <a href="index.html" class="nav-link" style="font-weight: 700; font-family: var(--font-ar);">AR</a>
+        <a href="admissions-en.html" class="btn btn-primary d-mobile-only">Apply Now</a>
+      </div>
+      <div class="nav-cta">
+        <a href="admissions-en.html" class="btn btn-primary d-desktop-only" style="padding: 10px 24px; font-size: 14px;">Apply Now</a>
+        <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="glass-badge" style="margin-bottom: 20px;">High School Alternative</div>
+        <h1 class="animate-on-scroll">Kawader Secondary Technical School for Nursing</h1>
+        <p class="hero-subtitle animate-on-scroll">Building a generation of professional nurses capable of serving the community with the highest standards of quality and medical care.</p>
+        <div class="hero-btns animate-on-scroll">
+          <a href="admissions-en.html" class="btn btn-primary">Apply Now</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper animate-on-scroll">
+        <img src="assets/nursing_hero.png" alt="Nursing Students" class="hero-image">
+        <div class="glass-badge floating-badge fb-1"><i class="ph-fill ph-graduation-cap"></i> +500 Graduates</div>
+        <div class="glass-badge floating-badge fb-2"><i class="ph-fill ph-star"></i> 5 Years of Exp.</div>
+        <div class="glass-badge floating-badge fb-3"><i class="ph-fill ph-hospital"></i> +10 Medical Partners</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section section-alt">
+    <div class="container about-grid">
+      <div class="about-image animate-on-scroll">
+        <img src="assets/school_campus.png" alt="School Campus">
+        <div class="glass-badge about-est-badge"><i class="ph-fill ph-calendar-check"></i> Est. 2018</div>
+      </div>
+      <div class="about-content animate-on-scroll">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">A Pioneer School in Technical Nursing Education</h2>
+        <p class="section-subtitle" style="margin-bottom: 24px;">Kawader Secondary Technical School for Nursing in Beheira was established to provide distinguished technical education in the field of nursing, combining advanced academic curriculum and practical training in the best hospitals and medical centers.</p>
+        <a href="about-en.html" class="btn btn-ghost">Learn More </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header center animate-on-scroll">
+        <span class="section-label">Our Programs</span>
+        <h2 class="section-title">What will you learn at Kawader?</h2>
+        <p class="section-subtitle">A comprehensive program combining theory and practice to graduate outstanding medical personnel.</p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card glass-card interactive-card animate-on-scroll">
+          <div class="icon-wrapper"><i class="ph ph-stethoscope"></i></div>
+          <h4>Academic Nursing</h4>
+          <p>The curriculum encompasses basic and advanced medical and nursing sciences.</p>
+          <a href="program-en.html" class="btn btn-ghost">Learn More </a>
+        </div>
+        <div class="program-card glass-card interactive-card animate-on-scroll" style="transition-delay: 0.15s">
+          <div class="icon-wrapper"><i class="ph ph-syringe"></i></div>
+          <h4>Clinical Training</h4>
+          <p>Intensive hands-on training in authorized hospitals and healthcare centers.</p>
+          <a href="program-en.html" class="btn btn-ghost">Learn More </a>
+        </div>
+        <div class="program-card glass-card interactive-card animate-on-scroll" style="transition-delay: 0.3s">
+          <div class="icon-wrapper"><i class="ph ph-certificate"></i></div>
+          <h4>Professional Qualification</h4>
+          <p>Holistic qualification for employment in the Egyptian and international health sector.</p>
+          <a href="program-en.html" class="btn btn-ghost">Learn More </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="glass-stats stats-bar animate-on-scroll">
+        <div class="stat-item"><span class="stat-number" data-target="500" data-prefix="+">0</span><span class="stat-label">Graduates</span></div>
+        <div class="stat-item"><span class="stat-number" data-target="10" data-prefix="+">0</span><span class="stat-label">Hospital Partners</span></div>
+        <div class="stat-item"><span class="stat-number" data-target="5">0</span><span class="stat-label">Years of Excellence</span></div>
+        <div class="stat-item"><span class="stat-number" data-target="95" data-suffix="%">0</span><span class="stat-label">Students Success Rate</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header center animate-on-scroll">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">What do they say about us?</h2>
+      </div>
+      <div class="programs-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="glass-card animate-on-scroll" style="padding: 40px;">
+          <i class="ph-fill ph-quotes" style="font-size: 40px; color: var(--color-primary-light); margin-bottom: 20px;"></i>
+          <p style="font-size: 18px; margin-bottom: 30px; color: var(--color-text-primary);">"My experience at Kawader changed my life. I learned nursing skills practically and theoretically and now work at Damanhour Teaching Hospital."</p>
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--color-primary-light); display: flex; align-items: center; justify-content: center; font-size: 24px;">🧑</div>
+            <div>
+              <h4 style="margin-bottom: 4px; font-size: 16px;">Ahmed Mahmoud</h4>
+              <span style="color: var(--color-text-secondary); font-size: 14px;">Graduate 2023</span>
+            </div>
+            <div style="margin-left: auto; color: #F59E0B;">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card animate-on-scroll" style="transition-delay: 0.15s; padding: 40px;">
+          <i class="ph-fill ph-quotes" style="font-size: 40px; color: var(--color-primary-light); margin-bottom: 20px;"></i>
+          <p style="font-size: 18px; margin-bottom: 30px; color: var(--color-text-primary);">"I am proud of my daughter who graduated from Kawader. The school provided an excellent learning environment, firm management, and real training."</p>
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--color-primary-light); display: flex; align-items: center; justify-content: center; font-size: 24px;">🧕</div>
+            <div>
+              <h4 style="margin-bottom: 4px; font-size: 16px;">Samira Hassan</h4>
+              <span style="color: var(--color-text-secondary); font-size: 14px;">Parent</span>
+            </div>
+            <div style="margin-left: auto; color: #F59E0B;">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="glass-dark cta-banner interactive-card animate-on-scroll">
+        <h2 class="section-title">Are you ready to begin your nursing journey?</h2>
+        <p class="section-subtitle">Join over 500 successful graduates and start your career today as a certified nursing technician.</p>
+        <div class="hero-btns">
+          <a href="admissions-en.html" class="btn btn-white">Apply Now</a>
+          <a href="contact-en.html" class="btn btn-white-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" style="grid-column: span 1;">
+          <div class="footer-logos">
+            <img src="assets/logo.png" alt="School Logo">
+            <img src="assets/ministry_logo.png" alt="Ministry of Health Logo">
+          </div>
+          <p>Kawader Secondary Technical School for Nursing in Beheira. A high school alternative qualifying generations of nurses to serve the community under the supervision of the Ministry of Health and Population.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="ph-fill ph-facebook-logo"></i></a>
+            <a href="#" class="social-icon"><i class="ph-fill ph-instagram-logo"></i></a>
+            <a href="#" class="social-icon"><i class="ph-fill ph-youtube-logo"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index-en.html">Home</a></li>
+            <li><a href="about-en.html">About Us</a></li>
+            <li><a href="program-en.html">Academic Program</a></li>
+            <li><a href="admissions-en.html">Admissions</a></li>
+            <li><a href="contact-en.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programs & Registration</h4>
+          <ul class="footer-links">
+            <li><a href="#">Admission Conditions</a></li>
+            <li><a href="#">Required Documents</a></li>
+            <li><a href="#">Curriculum</a></li>
+            <li><a href="#">Practical Training</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li style="display: flex; gap: 8px; margin-bottom: 12px; color: rgba(255,255,255,0.7);"><i class="ph-fill ph-phone" style="font-size: 20px;"></i> +20-100-XXX-XXXX</li>
+            <li style="display: flex; gap: 8px; margin-bottom: 12px; color: rgba(255,255,255,0.7);"><i class="ph-fill ph-whatsapp-logo" style="font-size: 20px;"></i> +20-100-XXX-XXXX</li>
+            <li style="display: flex; gap: 8px; margin-bottom: 12px; color: rgba(255,255,255,0.7);"><i class="ph-fill ph-envelope-simple" style="font-size: 20px;"></i> info@kawader.edu.eg</li>
+            <li style="display: flex; gap: 8px; color: rgba(255,255,255,0.7);"><i class="ph-fill ph-map-pin" style="font-size: 20px;"></i> Beheira, Damanhour, Egypt</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Kawader Secondary Technical School for Nursing in Beheira. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

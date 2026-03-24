@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Program | Kawader Nursing School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: var(--font-en); text-align: left; direction: ltr; }
+    .section-header, .section-header.center, .footer-col { text-align: left; }
+    .footer-links a:hover { padding-left: 5px; padding-right: 0; }
+    .nav-logo span { padding-left: 12px; }
+    .mini-hero { height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--gradient-hero); text-align: center; padding-top: 80px; position: relative; }
+    .timeline { position: relative; max-width: 800px; margin: 0 auto; padding-left: 40px; padding-right: 0; }
+    .timeline::before { content: ''; position: absolute; top: 0; left: 15px; width: 4px; height: 100%; background: var(--gradient-primary); border-radius: 4px; }
+    .timeline-item { position: relative; margin-bottom: 40px; }
+    .timeline-marker { position: absolute; left: -56px; right: auto; top: 0; width: 36px; height: 36px; border-radius: 50%; background: var(--color-accent); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; z-index: 2; border: 4px solid var(--color-bg-primary); }
+    ul { list-style: disc; padding-left: 20px; padding-right: 0; text-align: left; margin-bottom: 10px; }
+    .glass-badge { flex-direction: row; }
+    @media (max-width: 768px) { 
+      .nav-links { left: -100%; right: auto; transition: 0.4s left ease; box-shadow: 10px 0 30px rgba(0,0,0,0.1); }
+      .nav-links.active { left: 0; right: auto; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar glass-nav">
+    <div class="container nav-container">
+      <a href="index-en.html" class="nav-logo">
+        <img src="assets/logo.png" alt="Logo">
+        <span>Kawader School</span>
+      </a>
+      <div class="nav-links">
+        <a href="index-en.html" class="nav-link">Home</a>
+        <a href="about-en.html" class="nav-link">About Us</a>
+        <a href="program-en.html" class="nav-link active">Academic Program</a>
+        <a href="admissions-en.html" class="nav-link">Admissions</a>
+        <a href="contact-en.html" class="nav-link">Contact Us</a>
+        <a href="program.html" class="nav-link" style="font-weight: 700; font-family: var(--font-ar);">AR</a>
+      </div>
+      <div class="nav-cta"><button class="mobile-menu-btn"><i class="ph ph-list"></i></button></div>
+    </div>
+  </nav>
+
+  <header class="mini-hero">
+    <h1 class="animate-on-scroll">Academic Program</h1>
+    <p class="animate-on-scroll" style="color: var(--color-text-secondary); margin-top: 8px;">Home > Academic Program</p>
+  </header>
+
+  <section class="section">
+    <div class="container animate-on-scroll">
+      <div class="section-header center">
+        <span class="section-label">Program Structure</span>
+        <h2 class="section-title">Nursing Diploma Program — 5 Years</h2>
+        <p class="section-subtitle">A comprehensive educational journey combining medical science study and intensive practical application.</p>
+      </div>
+      
+      <div class="glass-card" style="padding: 40px; display: flex; gap: 40px; align-items: center; flex-wrap: wrap; text-align: left;">
+        <div style="flex: 1; min-width: 300px;">
+          <h3 style="font-size: 24px; margin-bottom: 16px;">Certified Diploma & Bright Future</h3>
+          <p style="margin-bottom: 24px;">Upon completing the five years, the student receives a certified nursing technician diploma from the Ministry of Health and Population, qualifying them for immediate employment in Ministry hospitals and units, or to pursue university studies in nursing colleges.</p>
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <div class="glass-badge"><i class="ph-fill ph-clock"></i> 5 Academic Years</div>
+            <div class="glass-badge"><i class="ph-fill ph-check-circle"></i> Theory + Practical</div>
+            <div class="glass-badge"><i class="ph-fill ph-certificate"></i> Certified Technical Diploma</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center animate-on-scroll">
+        <span class="section-label">Curriculum</span>
+        <h2 class="section-title">Your Journey Across Five Years</h2>
+      </div>
+      
+      <div class="timeline animate-on-scroll">
+        <div class="timeline-item">
+          <div class="timeline-marker">1</div>
+          <div class="glass-card interactive-card" style="padding: 32px; text-align: left;">
+            <h3 style="color: var(--color-primary); margin-bottom: 16px;">First Year</h3>
+            <ul style="color: var(--color-text-secondary);">
+              <li>Basic Sciences, Anatomy & Physiology</li>
+              <li>General Nursing Principles</li>
+              <li>Biochemistry & Microbiology</li>
+              <li>Medical English & Terminology</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker">2</div>
+          <div class="glass-card interactive-card" style="padding: 32px; text-align: left;">
+            <h3 style="color: var(--color-primary); margin-bottom: 16px;">Second Year</h3>
+            <ul style="color: var(--color-text-secondary);">
+              <li>Internal & Surgical Nursing (Part I)</li>
+              <li>Pharmacology & Clinical Pharmacy</li>
+              <li>Initial Practical Training in Advanced Labs</li>
+              <li>Medical Psychology & Sociology</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker">3</div>
+          <div class="glass-card interactive-card" style="padding: 32px; text-align: left;">
+            <h3 style="color: var(--color-primary); margin-bottom: 16px;">Third Year</h3>
+            <ul style="color: var(--color-text-secondary);">
+              <li>Internal & Surgical Nursing (Part II)</li>
+              <li>Pediatric & Neonatal Nursing</li>
+              <li>Start of Actual Clinical Training in Hospitals</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker">4</div>
+          <div class="glass-card interactive-card" style="padding: 32px; text-align: left;">
+            <h3 style="color: var(--color-primary); margin-bottom: 16px;">Fourth Year</h3>
+            <ul style="color: var(--color-text-secondary);">
+              <li>Obstetrics & Gynecology Nursing</li>
+              <li>Community Health & Primary Care Nursing</li>
+              <li>Advanced Clinical Training (Shift System)</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker">5</div>
+          <div class="glass-card interactive-card" style="padding: 32px; text-align: left;">
+            <h3 style="color: var(--color-primary); margin-bottom: 16px;">Fifth Year (Internship)</h3>
+            <ul style="color: var(--color-text-secondary);">
+              <li>Comprehensive Practical Training in All Departments (ER, ICU, OR)</li>
+              <li>Graduation Project & Field Research</li>
+              <li>Quality Management & Infection Control</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2025 Kawader Nursing School.</p></div></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

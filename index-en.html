@@ -39,7 +39,7 @@
     <div class="bg-circle bg-circle-1"></div><div class="bg-circle bg-circle-2"></div><div class="bg-circle bg-circle-3"></div>
   </div>
 
-  <nav class="navbar glass-nav">
+  <nav class="navbar">
     <div class="container nav-container">
       <a href="index-en.html" class="nav-logo">
         <img src="assets/logo.png" alt="Kawader Nursing School">
@@ -65,14 +65,24 @@
     <div class="container hero-container">
       <div class="hero-content">
         <div class="glass-badge" style="margin-bottom: 20px;">High School Alternative</div>
-        <h1 class="animate-on-scroll">Kawader Secondary Technical School for Nursing</h1>
+        <h1 class="animate-on-scroll">Your Nursing Career<br>Starts Here</h1>
+        <h3 class="animate-on-scroll" style="font-size: 20px; font-weight: normal; margin-bottom: 24px; color: var(--color-primary-dark);">Kawader Secondary Technical School for Nursing</h3>
+        
+        <!-- Mobile View Hero Image -->
+        <div class="hero-image-wrapper animate-on-scroll d-mobile-only" style="margin-bottom: 24px;">
+          <img src="assets/nursing_hero.png" alt="Nursing Students" class="hero-image">
+          <div class="glass-badge floating-badge fb-1"><i class="ph-fill ph-graduation-cap"></i> +500 Graduates</div>
+          <div class="glass-badge floating-badge fb-2"><i class="ph-fill ph-star"></i> 5 Years Exp.</div>
+          <div class="glass-badge floating-badge fb-3"><i class="ph-fill ph-hospital"></i> +10 Partners</div>
+        </div>
+
         <p class="hero-subtitle animate-on-scroll">Building a generation of professional nurses capable of serving the community with the highest standards of quality and medical care.</p>
         <div class="hero-btns animate-on-scroll">
           <a href="admissions-en.html" class="btn btn-primary">Apply Now</a>
           <a href="#about" class="btn btn-secondary">Learn More</a>
         </div>
       </div>
-      <div class="hero-image-wrapper animate-on-scroll">
+      <div class="hero-image-wrapper animate-on-scroll d-desktop-only">
         <img src="assets/nursing_hero.png" alt="Nursing Students" class="hero-image">
         <div class="glass-badge floating-badge fb-1"><i class="ph-fill ph-graduation-cap"></i> +500 Graduates</div>
         <div class="glass-badge floating-badge fb-2"><i class="ph-fill ph-star"></i> 5 Years of Exp.</div>
@@ -143,7 +153,7 @@
         <span class="section-label">Testimonials</span>
         <h2 class="section-title">What do they say about us?</h2>
       </div>
-      <div class="programs-grid" style="grid-template-columns: repeat(2, 1fr);">
+      <div class="testimonials-carousel">
         <div class="glass-card animate-on-scroll" style="padding: 40px;">
           <i class="ph-fill ph-quotes" style="font-size: 40px; color: var(--color-primary-light); margin-bottom: 20px;"></i>
           <p style="font-size: 18px; margin-bottom: 30px; color: var(--color-text-primary);">"My experience at Kawader changed my life. I learned nursing skills practically and theoretically and now work at Damanhour Teaching Hospital."</p>
@@ -199,29 +209,32 @@
           </div>
           <p>Kawader Secondary Technical School for Nursing in Beheira. A high school alternative qualifying generations of nurses to serve the community under the supervision of the Ministry of Health and Population.</p>
           <div class="social-icons">
-            <a href="#" class="social-icon"><i class="ph-fill ph-facebook-logo"></i></a>
-            <a href="#" class="social-icon"><i class="ph-fill ph-instagram-logo"></i></a>
-            <a href="#" class="social-icon"><i class="ph-fill ph-youtube-logo"></i></a>
+            <a href="#" class="social-icon" style="color: var(--color-primary-light);"><i class="ph-fill ph-facebook-logo"></i></a>
+            <a href="#" class="social-icon" style="color: var(--color-primary-light);"><i class="ph-fill ph-instagram-logo"></i></a>
+            <a href="#" class="social-icon" style="color: var(--color-primary-light);"><i class="ph-fill ph-youtube-logo"></i></a>
           </div>
         </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="index-en.html">Home</a></li>
-            <li><a href="about-en.html">About Us</a></li>
-            <li><a href="program-en.html">Academic Program</a></li>
-            <li><a href="admissions-en.html">Admissions</a></li>
-            <li><a href="contact-en.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Programs & Registration</h4>
-          <ul class="footer-links">
-            <li><a href="#">Admission Conditions</a></li>
-            <li><a href="#">Required Documents</a></li>
-            <li><a href="#">Curriculum</a></li>
-            <li><a href="#">Practical Training</a></li>
-          </ul>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 32px; grid-column: span 2;">
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index-en.html">Home</a></li>
+              <li><a href="about-en.html">About Us</a></li>
+              <li><a href="program-en.html">Academic Program</a></li>
+              <li><a href="admissions-en.html">Admissions</a></li>
+              <li><a href="contact-en.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Programs & Registration</h4>
+            <ul class="footer-links">
+              <li><a href="#">Admission Conditions</a></li>
+              <li><a href="#">Required Documents</a></li>
+              <li><a href="#">Curriculum</a></li>
+              <li><a href="#">Practical Training</a></li>
+            </ul>
+          </div>
         </div>
         <div class="footer-col">
           <h4>Contact Us</h4>
@@ -238,6 +251,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="#" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="ph-fill ph-whatsapp-logo"></i>
+  </a>
 
   <script src="app.js"></script>
 </body>

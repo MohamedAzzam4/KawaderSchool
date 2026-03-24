@@ -27,7 +27,7 @@
   </div>
 
   <!-- Navigation -->
-  <nav class="navbar glass-nav">
+  <nav class="navbar">
     <div class="container nav-container">
       <a href="index.html" class="nav-logo">
         <img src="assets/logo.png" alt="مدرسة كوادر للتمريض">
@@ -56,14 +56,24 @@
     <div class="container hero-container">
       <div class="hero-content">
         <div class="glass-badge" style="margin-bottom: 20px;">بديل الثانوية العامة</div>
-        <h1 class="animate-on-scroll">مدرسة كوادر الثانوية الفنية للتمريض</h1>
+        <h1 class="animate-on-scroll">مستقبلك في التمريض<br>يبدأ من هنا</h1>
+        <h3 class="animate-on-scroll" style="font-size: 20px; font-weight: normal; margin-bottom: 24px; color: var(--color-primary-dark);">مدرسة كوادر الثانوية الفنية للتمريض بالبحيرة</h3>
+        
+        <!-- Mobile View Hero Image -->
+        <div class="hero-image-wrapper animate-on-scroll d-mobile-only" style="margin-bottom: 24px;">
+          <img src="assets/nursing_hero.png" alt="Nursing Students" class="hero-image">
+          <div class="glass-badge floating-badge fb-1"><i class="ph-fill ph-graduation-cap"></i> +500 خريج</div>
+          <div class="glass-badge floating-badge fb-2"><i class="ph-fill ph-star"></i> 5 سنوات خبرة</div>
+          <div class="glass-badge floating-badge fb-3"><i class="ph-fill ph-hospital"></i> +10 شركاء طبيين</div>
+        </div>
+
         <p class="hero-subtitle animate-on-scroll">نبني جيلاً من الممرضين المحترفين القادرين على خدمة المجتمع بأعلى معايير الجودة والرعاية الطبية.</p>
         <div class="hero-btns animate-on-scroll">
           <a href="admissions.html" class="btn btn-primary">قدّم الآن</a>
           <a href="#about" class="btn btn-secondary">اعرف المزيد</a>
         </div>
       </div>
-      <div class="hero-image-wrapper animate-on-scroll">
+      <div class="hero-image-wrapper animate-on-scroll d-desktop-only">
         <img src="assets/nursing_hero.png" alt="Nursing Students" class="hero-image">
         
         <div class="glass-badge floating-badge fb-1">
@@ -163,34 +173,34 @@
         <h2 class="section-title">ماذا يقولون عنّا؟</h2>
       </div>
       
-      <div class="programs-grid" style="grid-template-columns: repeat(2, 1fr);">
+      <div class="testimonials-carousel">
         <div class="glass-card animate-on-scroll" style="padding: 40px;">
           <i class="ph-fill ph-quotes" style="font-size: 40px; color: var(--color-primary-light); margin-bottom: 20px;"></i>
           <p style="font-size: 18px; margin-bottom: 30px; color: var(--color-text-primary);">"تجربتي في مدرسة كوادر غيّرت حياتي. تعلمت مهارات التمريض بشكل عملي ونظري متميز وأنا الآن أعمل في مستشفى دمنهور التعليمي."</p>
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--color-primary-light); display: flex; align-items: center; justify-content: center; font-size: 24px;">🧑</div>
-            <div>
-              <h4 style="margin-bottom: 4px; font-size: 16px;">أحمد محمود</h4>
-              <span style="color: var(--color-text-secondary); font-size: 14px;">خريج دفعة 2023</span>
+          <div style="display: flex; align-items: center; justify-content: flex-end; gap: 16px;">
+            <div style="display: flex; flex-direction: column; align-items: flex-end; text-align: right;">
+              <h4 style="margin-bottom: 4px; font-size: 16px; margin-top: 0;">أحمد محمود</h4>
+              <span style="color: var(--color-text-secondary); font-size: 14px; margin-bottom: 8px;">خريج دفعة 2023</span>
+              <div style="color: #F59E0B; display: flex; gap: 2px;">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
             </div>
-            <div style="margin-right: auto; color: #F59E0B;">
-              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-            </div>
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--color-primary-light); display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0;">🧑</div>
           </div>
         </div>
         
         <div class="glass-card animate-on-scroll" style="transition-delay: 0.15s; padding: 40px;">
           <i class="ph-fill ph-quotes" style="font-size: 40px; color: var(--color-primary-light); margin-bottom: 20px;"></i>
           <p style="font-size: 18px; margin-bottom: 30px; color: var(--color-text-primary);">"أنا فخورة بابنتي التي تخرجت من كوادر. المدرسة وفرت بيئة تعليمية ممتازة، إدارة حازمة، وتدريب حقيقي أهّلها لسوق العمل فوراً."</p>
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--color-primary-light); display: flex; align-items: center; justify-content: center; font-size: 24px;">🧕</div>
-            <div>
-              <h4 style="margin-bottom: 4px; font-size: 16px;">سميرة حسن</h4>
-              <span style="color: var(--color-text-secondary); font-size: 14px;">ولية أمر</span>
+          <div style="display: flex; align-items: center; justify-content: flex-end; gap: 16px;">
+            <div style="display: flex; flex-direction: column; align-items: flex-end; text-align: right;">
+              <h4 style="margin-bottom: 4px; font-size: 16px; margin-top: 0;">سميرة حسن</h4>
+              <span style="color: var(--color-text-secondary); font-size: 14px; margin-bottom: 8px;">ولية أمر</span>
+              <div style="color: #F59E0B; display: flex; gap: 2px;">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
             </div>
-            <div style="margin-right: auto; color: #F59E0B;">
-              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-            </div>
+            <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--color-primary-light); display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0;">🧕</div>
           </div>
         </div>
       </div>
@@ -222,31 +232,33 @@
           </div>
           <p>مدرسة كوادر الثانوية الفنية للتمريض بالبحيرة. بديل الثانوية العامة، نؤهل أجيالاً من الممرضين لخدمة المجتمع تحت إشراف وزارة الصحة والسكان.</p>
           <div class="social-icons">
-            <a href="#" class="social-icon"><i class="ph-fill ph-facebook-logo"></i></a>
-            <a href="#" class="social-icon"><i class="ph-fill ph-instagram-logo"></i></a>
-            <a href="#" class="social-icon"><i class="ph-fill ph-youtube-logo"></i></a>
+            <a href="#" class="social-icon" style="color: var(--color-primary-light);"><i class="ph-fill ph-facebook-logo"></i></a>
+            <a href="#" class="social-icon" style="color: var(--color-primary-light);"><i class="ph-fill ph-instagram-logo"></i></a>
+            <a href="#" class="social-icon" style="color: var(--color-primary-light);"><i class="ph-fill ph-youtube-logo"></i></a>
           </div>
         </div>
         
-        <div class="footer-col">
-          <h4>روابط سريعة</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="about.html">من نحن</a></li>
-            <li><a href="program.html">البرنامج الأكاديمي</a></li>
-            <li><a href="admissions.html">القبول والتسجيل</a></li>
-            <li><a href="contact.html">اتصل بنا</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-col">
-          <h4>البرامج والتسجيل</h4>
-          <ul class="footer-links">
-            <li><a href="#">شروط القبول</a></li>
-            <li><a href="#">الأوراق المطلوبة</a></li>
-            <li><a href="#">المناهج الدراسية</a></li>
-            <li><a href="#">التدريب العملي</a></li>
-          </ul>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 32px; grid-column: span 2;">
+          <div class="footer-col">
+            <h4>روابط سريعة</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="about.html">من نحن</a></li>
+              <li><a href="program.html">البرنامج الأكاديمي</a></li>
+              <li><a href="admissions.html">القبول والتسجيل</a></li>
+              <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>البرامج والتسجيل</h4>
+            <ul class="footer-links">
+              <li><a href="#">شروط القبول</a></li>
+              <li><a href="#">الأوراق المطلوبة</a></li>
+              <li><a href="#">المناهج الدراسية</a></li>
+              <li><a href="#">التدريب العملي</a></li>
+            </ul>
+          </div>
         </div>
         
         <div class="footer-col">
@@ -265,6 +277,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="#" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="ph-fill ph-whatsapp-logo"></i>
+  </a>
 
   <script src="app.js"></script>
 </body>

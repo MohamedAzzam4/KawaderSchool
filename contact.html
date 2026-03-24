@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا | مدرسة كوادر للتمريض</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .mini-hero { height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--gradient-hero); text-align: center; padding-top: 80px; position: relative; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; }
+    .contact-info-card { display: flex; gap: 16px; margin-bottom: 24px; padding: 24px; }
+    .contact-info-card i { font-size: 32px; color: var(--color-primary); }
+    .form-input { width: 100%; padding: 16px 20px; font-family: var(--font-ar); font-size: 16px; background: rgba(255, 255, 255, 0.60); backdrop-filter: blur(8px); border: 1.5px solid var(--color-border); border-radius: 12px; color: var(--color-text-primary); transition: var(--transition-default); direction: rtl; margin-bottom: 20px; }
+    .form-input:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.10); }
+    .form-textarea { min-height: 140px; resize: vertical; }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar glass-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="../assets/logo.png" alt="مدرسة كوادر">
+        <span>مدرسة كوادر</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="about.html" class="nav-link">من نحن</a>
+        <a href="program.html" class="nav-link">البرنامج الأكاديمي</a>
+        <a href="admissions.html" class="nav-link">القبول والتسجيل</a>
+        <a href="contact.html" class="nav-link active">اتصل بنا</a>
+      </div>
+      <div class="nav-cta"><button class="mobile-menu-btn"><i class="ph ph-list"></i></button></div>
+    </div>
+  </nav>
+
+  <header class="mini-hero">
+    <h1 class="animate-on-scroll">اتصل بنا</h1>
+    <p class="animate-on-scroll" style="color: var(--color-text-secondary); margin-top: 8px;">الرئيسية > اتصل بنا</p>
+  </header>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-info animate-on-scroll">
+        <h2 class="section-title">تواصل معنا</h2>
+        <h3 class="section-subtitle" style="margin-bottom: 40px; color: var(--color-primary);">نحن هنا لمساعدتك للرد على استفساراتك</h3>
+        
+        <div class="glass-card contact-info-card interactive-card">
+          <i class="ph-fill ph-phone-call"></i>
+          <div>
+            <h4 style="margin-bottom: 4px;">رقم الهاتف</h4>
+            <p style="direction: ltr; text-align: right; color: var(--color-text-secondary);">+20 100 XXX XXXX</p>
+          </div>
+        </div>
+        
+        <div class="glass-card contact-info-card interactive-card">
+          <i class="ph-fill ph-envelope-simple"></i>
+          <div>
+            <h4 style="margin-bottom: 4px;">البريد الإلكتروني</h4>
+            <p style="color: var(--color-text-secondary);">info@kawader.edu.eg</p>
+          </div>
+        </div>
+        
+        <div class="glass-card contact-info-card interactive-card">
+          <i class="ph-fill ph-map-pin"></i>
+          <div>
+            <h4 style="margin-bottom: 4px;">العنوان</h4>
+            <p style="color: var(--color-text-secondary);">محافظة البحيرة، دمنهور، شارع عبد السلام الشاذلي</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form-container animate-on-scroll">
+        <div class="glass-card" style="padding: 40px;">
+          <h3 style="margin-bottom: 24px; font-size: 24px;">أرسل لنا رسالة</h3>
+          <form onsubmit="event.preventDefault(); alert('تم إرسال الرسالة بنجاح!');">
+            <input type="text" class="form-input" placeholder="الاسم كامل" required>
+            <input type="email" class="form-input" placeholder="البريد الإلكتروني" required>
+            <input type="tel" class="form-input" placeholder="رقم الهاتف" required>
+            <textarea class="form-input form-textarea" placeholder="الرسالة أوالاستفسار" required></textarea>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">إرسال الرسالة</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container animate-on-scroll">
+      <div class="glass-card" style="padding: 8px; border-radius: 24px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109861.94828131346!2d30.347012971271616!3d31.040441443657375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f61e86b039dbad%3A0xe96cf0b53ad6c5df!2sDamanhour%2C%20El%20Beheira%20Governorate!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" width="100%" height="450" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (truncated) -->
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2025 مدرسة كوادر الثانوية الفنية للتمريض بالبحيرة.</p></div></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

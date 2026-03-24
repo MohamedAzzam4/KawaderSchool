@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من نحن | مدرسة كوادر للتمريض</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .mini-hero {
+      height: 300px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      background: var(--gradient-hero);
+      text-align: center;
+      padding-top: 80px;
+      position: relative; overflow: hidden;
+    }
+    .faculty-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .faculty-card { padding: 32px 24px; text-align: center; }
+    .faculty-photo { width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 16px; object-fit: cover; }
+    @media (max-width: 1024px) { .faculty-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 768px) { .faculty-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <!-- Nav (same as index) -->
+  <nav class="navbar glass-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="../assets/logo.png" alt="مدرسة كوادر للتمريض">
+        <span>مدرسة كوادر</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="about.html" class="nav-link active">من نحن</a>
+        <a href="program.html" class="nav-link">البرنامج الأكاديمي</a>
+        <a href="admissions.html" class="nav-link">القبول والتسجيل</a>
+        <a href="contact.html" class="nav-link">اتصل بنا</a>
+        <a href="admissions.html" class="btn btn-primary d-mobile-only">قدّم الآن</a>
+      </div>
+      <div class="nav-cta">
+        <a href="admissions.html" class="btn btn-primary d-desktop-only" style="padding: 10px 24px; font-size: 14px;">قدّم الآن</a>
+        <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="mini-hero">
+    <h1 class="animate-on-scroll">من نحن</h1>
+    <p class="animate-on-scroll" style="color: var(--color-text-secondary); margin-top: 8px;">الرئيسية > من نحن</p>
+  </header>
+
+  <section class="section">
+    <div class="container about-grid">
+      <div class="about-image animate-on-scroll">
+        <img src="../assets/school_campus.png" alt="School Campus" style="border-radius: 20px;">
+        <div class="glass-badge about-est-badge" style="background: rgba(255,255,255,0.8);">
+          <img src="../assets/ministry_logo.png" alt="Ministry" style="height: 30px; border-radius: 4px;"> تحت إشراف وزارة الصحة والسكان
+        </div>
+      </div>
+      <div class="about-content animate-on-scroll">
+        <span class="section-label">قصتنا</span>
+        <h2 class="section-title">مسيرة تميّز في التعليم الفني للتمريض</h2>
+        <p style="margin-bottom: 16px;">تأسست مدرسة كوادر الثانوية الفنية للتمريض بالبحيرة كاستجابة للحاجة المتزايدة للكوادر الطبية المؤهلة تأهيلاً عالياً في قطاع الرعاية الصحية المصري.</p>
+        <p>مدرستنا هي بديل متميز للثانوية العامة، حيث يحصل الطلاب على تدريب مكثف يجمع بين الجانب الأكاديمي النظري والتطبيق العملي في أفضل المستشفيات الحكومية والخاصة المعتمدة بالمحافظة، ليصبحوا مستعدين للانخراط في سوق العمل فور تخرجهم.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container programs-grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="glass-card program-card animate-on-scroll">
+        <div class="icon-wrapper"><i class="ph ph-binoculars"></i></div>
+        <h3 style="font-size: 24px; margin-bottom: 16px;">الرؤية</h3>
+        <p>أن نكون المدرسة الرائدة في تخريج كوادر تمريضية متميزة على مستوى الجمهورية، معترف بها لجودة التعليم والتدريب السريري، ونساهم في رفع مستوى الرعاية الصحية.</p>
+      </div>
+      <div class="glass-card program-card animate-on-scroll" style="transition-delay: 0.15s">
+        <div class="icon-wrapper"><i class="ph ph-target"></i></div>
+        <h3 style="font-size: 24px; margin-bottom: 16px;">الرسالة</h3>
+        <p>تأهيل ممرضين وممرضات مؤهلين علمياً وعملياً لتقديم خدمات صحية عالية الجودة للمجتمع، مزودين بالمهارات المتقدمة والأخلاقيات المهنية اللازمة لمهنة التمريض الإنسانية.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">فريقنا</span>
+        <h2 class="section-title">نخبة من المعلمين والمتخصصين</h2>
+      </div>
+      <div class="faculty-grid">
+        <div class="glass-card faculty-card interactive-card animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=300" class="faculty-photo" alt="Doctor">
+          <h4>د. محمود علي</h4>
+          <p style="color: var(--color-text-secondary); font-size: 14px;">مدير المدرسة</p>
+        </div>
+        <div class="glass-card faculty-card interactive-card animate-on-scroll" style="transition-delay: 0.1s">
+          <img src="https://images.unsplash.com/photo-1594824436998-ef224e756c60?auto=format&fit=crop&q=80&w=300" class="faculty-photo" alt="Doctor">
+          <h4>أ. فاطمة سعيد</h4>
+          <p style="color: var(--color-text-secondary); font-size: 14px;">رئيس قسم التدريب السريري</p>
+        </div>
+        <div class="glass-card faculty-card interactive-card animate-on-scroll" style="transition-delay: 0.2s">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=300" class="faculty-photo" alt="Doctor">
+          <h4>د. مصطفى كمال</h4>
+          <p style="color: var(--color-text-secondary); font-size: 14px;">أستاذ التشريح والأدوية</p>
+        </div>
+        <div class="glass-card faculty-card interactive-card animate-on-scroll" style="transition-delay: 0.3s">
+          <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=300" class="faculty-photo" alt="Nurse">
+          <h4>أ. هبة ممدوح</h4>
+          <p style="color: var(--color-text-secondary); font-size: 14px;">مشرفة التمريض العملي</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as index, truncated for brevity) -->
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p>© 2025 مدرسة كوادر الثانوية الفنية للتمريض بالبحيرة.</p></div></div></footer>
+  
+  <script src="app.js"></script>
+</body>
+</html>

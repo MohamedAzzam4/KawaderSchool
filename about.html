@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>من نحن | مدرسة كوادر للتمريض</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="styles.css">
   <style>
     .mini-hero {
       height: 300px;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       background: var(--gradient-hero);
       text-align: center;
       padding-top: 80px;
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
     }
-    .faculty-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-    .faculty-card { padding: 32px 24px; text-align: center; }
-    .faculty-photo { width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 16px; object-fit: cover; }
-    @media (max-width: 1024px) { .faculty-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 768px) { .faculty-grid { grid-template-columns: 1fr; } }
+
+    .faculty-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .faculty-card {
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .faculty-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 1024px) {
+      .faculty-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .faculty-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
+
 <body>
   <!-- Nav (same as index) -->
   <nav class="navbar">
@@ -41,7 +75,8 @@
         <a href="admissions.html" class="btn btn-primary d-mobile-only">قدّم الآن</a>
       </div>
       <div class="nav-cta">
-        <a href="admissions.html" class="btn btn-primary d-desktop-only" style="padding: 10px 24px; font-size: 14px;">قدّم الآن</a>
+        <a href="admissions.html" class="btn btn-primary d-desktop-only"
+          style="padding: 10px 24px; font-size: 14px;">قدّم الآن</a>
         <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
       </div>
     </div>
@@ -57,14 +92,18 @@
       <div class="about-image animate-on-scroll">
         <img src="assets/school_campus.png" alt="School Campus" style="border-radius: 20px;">
         <div class="glass-badge about-est-badge" style="background: rgba(255,255,255,0.8);">
-          <img src="assets/ministry_logo.png" alt="Ministry" style="height: 30px; border-radius: 4px;"> تحت إشراف وزارة الصحة والسكان
+          <img src="assets/ministry_logo.png" alt="Ministry" style="height: 30px; border-radius: 4px;"> تحت إشراف وزارة
+          الصحة والسكان
         </div>
       </div>
       <div class="about-content animate-on-scroll">
         <span class="section-label">قصتنا</span>
         <h2 class="section-title">مسيرة تميّز في التعليم الفني للتمريض</h2>
-        <p style="margin-bottom: 16px;">تأسست مدرسة كوادر الثانوية الفنية للتمريض بالبحيرة كاستجابة للحاجة المتزايدة للكوادر الطبية المؤهلة تأهيلاً عالياً في قطاع الرعاية الصحية المصري.</p>
-        <p>مدرستنا هي بديل متميز للثانوية العامة، حيث يحصل الطلاب على تدريب مكثف يجمع بين الجانب الأكاديمي النظري والتطبيق العملي في أفضل المستشفيات الحكومية والخاصة المعتمدة بالمحافظة، ليصبحوا مستعدين للانخراط في سوق العمل فور تخرجهم.</p>
+        <p style="margin-bottom: 16px;">تأسست مدرسة كوادر الثانوية الفنية للتمريض بالبحيرة كاستجابة للحاجة المتزايدة
+          للكوادر الطبية المؤهلة تأهيلاً عالياً في قطاع الرعاية الصحية المصري.</p>
+        <p>مدرستنا هي بديل متميز للثانوية العامة، حيث يحصل الطلاب على تدريب مكثف يجمع بين الجانب الأكاديمي النظري
+          والتطبيق العملي في أفضل المستشفيات الحكومية والخاصة المعتمدة بالمحافظة، ليصبحوا مستعدين للانخراط في سوق العمل
+          فور تخرجهم.</p>
       </div>
     </div>
   </section>
@@ -74,12 +113,14 @@
       <div class="glass-card program-card animate-on-scroll">
         <div class="icon-wrapper"><i class="ph ph-binoculars"></i></div>
         <h3 style="font-size: 24px; margin-bottom: 16px;">الرؤية</h3>
-        <p>أن نكون المدرسة الرائدة في تخريج كوادر تمريضية متميزة على مستوى الجمهورية، معترف بها لجودة التعليم والتدريب السريري، ونساهم في رفع مستوى الرعاية الصحية.</p>
+        <p>أن نكون المدرسة الرائدة في تخريج كوادر تمريضية متميزة على مستوى الجمهورية، معترف بها لجودة التعليم والتدريب
+          السريري، ونساهم في رفع مستوى الرعاية الصحية.</p>
       </div>
       <div class="glass-card program-card animate-on-scroll" style="transition-delay: 0.15s">
         <div class="icon-wrapper"><i class="ph ph-target"></i></div>
         <h3 style="font-size: 24px; margin-bottom: 16px;">الرسالة</h3>
-        <p>تأهيل ممرضين وممرضات مؤهلين علمياً وعملياً لتقديم خدمات صحية عالية الجودة للمجتمع، مزودين بالمهارات المتقدمة والأخلاقيات المهنية اللازمة لمهنة التمريض الإنسانية.</p>
+        <p>تأهيل ممرضين وممرضات مؤهلين علمياً وعملياً لتقديم خدمات صحية عالية الجودة للمجتمع، مزودين بالمهارات المتقدمة
+          والأخلاقيات المهنية اللازمة لمهنة التمريض الإنسانية.</p>
       </div>
     </div>
   </section>
@@ -92,22 +133,27 @@
       </div>
       <div class="faculty-grid">
         <div class="glass-card faculty-card interactive-card animate-on-scroll">
-          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=300" class="faculty-photo" alt="Doctor">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="faculty-photo" alt="Doctor">
           <h4>د. محمود علي</h4>
           <p style="color: var(--color-text-secondary); font-size: 14px;">مدير المدرسة</p>
         </div>
         <div class="glass-card faculty-card interactive-card animate-on-scroll" style="transition-delay: 0.1s">
-          <img src="https://images.unsplash.com/photo-1594824436998-ef224e756c60?auto=format&fit=crop&q=80&w=300" class="faculty-photo" alt="Doctor">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=300"
+            class="faculty-photo" alt="Doctor">
           <h4>أ. فاطمة سعيد</h4>
           <p style="color: var(--color-text-secondary); font-size: 14px;">رئيس قسم التدريب السريري</p>
         </div>
         <div class="glass-card faculty-card interactive-card animate-on-scroll" style="transition-delay: 0.2s">
-          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=300" class="faculty-photo" alt="Doctor">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=300"
+            class="faculty-photo" alt="Doctor">
           <h4>د. مصطفى كمال</h4>
           <p style="color: var(--color-text-secondary); font-size: 14px;">أستاذ التشريح والأدوية</p>
         </div>
         <div class="glass-card faculty-card interactive-card animate-on-scroll" style="transition-delay: 0.3s">
-          <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=300" class="faculty-photo" alt="Nurse">
+          <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=300"
+            class="faculty-photo" alt="Nurse">
           <h4>أ. هبة ممدوح</h4>
           <p style="color: var(--color-text-secondary); font-size: 14px;">مشرفة التمريض العملي</p>
         </div>
@@ -124,10 +170,12 @@
             <img src="assets/logo.png" alt="شعار المدرسة">
             <img src="assets/ministry_logo.png" alt="شعار وزارة الصحة">
           </div>
-          <p>مدرسة كوادر الثانوية الفنية للتمريض بالبحيرة. بديل الثانوية العامة، نؤهل أجيالاً من الممرضين لخدمة المجتمع تحت إشراف وزارة الصحة والسكان.</p>
+          <p>مدرسة كوادر الثانوية الفنية للتمريض بالبحيرة. بديل الثانوية العامة، نؤهل أجيالاً من الممرضين لخدمة المجتمع
+            تحت إشراف وزارة الصحة والسكان.</p>
         </div>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 32px; grid-column: span 2;">
+
+        <div
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 32px; grid-column: span 2;">
           <div class="footer-col">
             <h4>روابط سريعة</h4>
             <ul class="footer-links">
@@ -140,15 +188,18 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom"><p>© 2025 مدرسة كوادر الثانوية الفنية للتمريض بالبحيرة.</p></div>
+      <div class="footer-bottom">
+        <p>© 2025 مدرسة كوادر الثانوية الفنية للتمريض بالبحيرة.</p>
+      </div>
     </div>
   </footer>
-  
+
   <!-- WhatsApp Floating Button -->
   <a href="#" class="whatsapp-float" aria-label="Chat on WhatsApp">
     <i class="ph-fill ph-whatsapp-logo"></i>
   </a>
-  
+
   <script src="app.js"></script>
 </body>
+
 </html>

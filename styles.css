@@ -479,6 +479,19 @@ ul {
   box-shadow: 0 20px 40px rgba(91, 45, 142, 0.18);
   border-color: rgba(139, 92, 246, 0.30);
 }
+
+/* Testimonials Layout */
+.testimonials-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.testimonials-carousel > .glass-card {
+  width: 100%;
+}
+
 .program-card::after {
   content: '';
   position: absolute;
@@ -773,19 +786,9 @@ ul {
 
   /* — Testimonials Mobile — */
   .testimonials-carousel {
-    display: flex !important;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     gap: 16px;
-    padding-bottom: 16px;
-    -webkit-overflow-scrolling: touch;
-    width: 100%;
   }
-  .testimonials-carousel::-webkit-scrollbar { display: none; }
-  .testimonials-carousel .glass-card {
-    min-width: 85vw;
-    scroll-snap-align: center;
-  }
+  
   .glass-card[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
 
   /* — CTA Banner Mobile — */
